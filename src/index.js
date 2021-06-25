@@ -7,17 +7,17 @@ import './index.css';
 import movies from './reducers';
 
 const store =createStore(movies);
-console.log('store',store);
+// console.log('store',store);
 
-store.dispatch ({
-  type:'ADD_MOVIES',
-  movies:[{name:'Superman'}]
-});
+// store.dispatch ({
+//   type:'ADD_MOVIES',
+//   movies:[{name:'Superman'}]
+// });
 
 console.log(store.getState());
 
 ReactDOM.render(
-  <App />,
+  <App store={store} />,
   document.getElementById('root')
 );
 

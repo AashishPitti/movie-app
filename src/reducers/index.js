@@ -73,4 +73,3 @@ export default combineReducers({
     movies,
     search
 });
-// movies(undefined,{});

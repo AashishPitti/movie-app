@@ -6,7 +6,7 @@ import App from './components/App';
 import movies from './reducers';
 import rootReducer from './reducers';
 
-
+// Adding Middleware 
 const logger = function({dispatch, getState}) {
   return function (next) {
     return function (action) {
